@@ -1,0 +1,76 @@
+/* Reset default styles */
+.menu {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 430px; /* Adjust padding as needed */
+    background-color: #646363; /* Background color for the menu bar */
+}
+
+/* Style for the logo */
+.menu .logo {
+    flex: 0 0 auto; /* Ensures the logo doesn't grow or shrink */
+}
+
+.menu .logo a {
+    display: block;
+}
+
+.menu .logo img {
+    max-width: 100px; /* Adjust maximum width of the logo */
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Basic reset for list styling */
+.menu-items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Horizontal layout for the menu items */
+.menu-items li {
+    margin-right: 15px; /* Adjust as needed */
+    position: relative; /* Required for absolute positioning of dropdown */
+}
+
+/* Style for the links */
+.menu-items li a {
+    text-decoration: none;
+    color: #ffffff; /* Text color */
+    padding: 8px 12px; /* Padding around the text */
+    display: block; /* Makes the entire area clickable */
+}
+
+/* Style for the dropdown menu */
+.menu-items .submenu .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position dropdown below the submenu item */
+    left: 0;
+    background-color: #646363; /* Background color */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Box shadow for dropdown */
+    z-index: 1; /* Ensure dropdown appears above other content */
+    min-width: 160px; /* Adjust width as needed */
+}
+
+.menu-items .submenu:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Style for dropdown items */
+.menu-items .submenu .dropdown li {
+    display: block;
+}
+
+.menu-items .submenu .dropdown li a {
+    color: #ffffff; /* Text color */
+    padding: 10px 15px; /* Padding for dropdown items */
+    display: block; /* Ensure dropdown items are block elements */
+}
+
+.menu-items .submenu .dropdown li a:hover {
+    background-color: #3d3d3d; /* Background color on hover */
+}
